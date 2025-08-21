@@ -1,0 +1,101 @@
+/* iframe içinde kullanım için özel stiller */
+
+/* iframe içindeyken header ve sidebar'ı gizle */
+body.in-iframe .sidebar {
+  display: none !important;
+}
+
+body.in-iframe .header-container {
+  display: none !important;
+}
+
+body.in-iframe .ant-layout-sider {
+  display: none !important;
+}
+
+body.in-iframe .ant-layout-header {
+  display: none !important;
+}
+
+/* iframe içindeyken padding'leri ayarla */
+body.in-iframe .ant-layout-content {
+  margin: 0 !important;
+  padding: 16px !important;
+}
+
+body.in-iframe .main-content {
+  padding: 0 !important;
+}
+
+/* iframe içindeyken scroll davranışı */
+body.in-iframe {
+  overflow: auto !important;
+}
+
+/* iframe'de gereksiz elementleri gizle */
+body.in-iframe .upgrade-button {
+  display: none !important;
+}
+
+body.in-iframe .footer {
+  display: none !important;
+}
+
+/* iframe için responsive ayarlar */
+@media (max-width: 768px) {
+  body.in-iframe .ant-layout-content {
+    padding: 8px !important;
+  }
+}
+
+/* iframe loading durumu */
+body.in-iframe .page-loader {
+  background: transparent;
+  min-height: 300px;
+}
+
+/* iframe içinde form ayarları */
+body.in-iframe .ant-form {
+  max-width: 100%;
+}
+
+/* iframe'de modal ayarları */
+body.in-iframe .ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* iframe'de notification pozisyonu */
+body.in-iframe .ant-notification {
+  top: 20px !important;
+}
+
+/* iframe'de table responsive */
+body.in-iframe .ant-table-wrapper {
+  overflow-x: auto;
+}
+
+/* iframe'de breadcrumb gizle */
+body.in-iframe .ant-breadcrumb {
+  display: none;
+}
+
+/* iframe'de page header basitleştir */
+body.in-iframe .ant-page-header {
+  padding: 8px 0;
+}
+
+/* SmiloAI renk uyumu */
+body.in-iframe {
+  --primary-color: #6366f1; /* SmiloAI primary color */
+  --bg-color: #f9fafb;
+}
+
+body.in-iframe .ant-btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+body.in-iframe .ant-btn-primary:hover {
+  background-color: #5558e3;
+  border-color: #5558e3;
+}
